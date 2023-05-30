@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+</head>
+<body>
+
+
+
+    <div>
+
+        <h1 class="text col1">My Budget App</h1>
+
+
+        
+
+        <p class="ad_bd">
+          <h3 class="text col1">Add Total Budge</h3>
+<!-- 
+            <form class=" container"> -->
+                <div class="container">
+                    
+                    <input type="number" required class="form-control d-flex justify-content-center align-items-center myNew" id="totalAmount" placeholder="Add Budget Amount">
+                  </div>
+               
+                <div class="d-flex justify-content-center align-items-center mt-4">
+                  <button class="btn mb-3 bg1 col2" onclick="sec2()">Submit</button>
+                </div>
+              <!-- </form> -->
+        </p>
+          <hr class="col1"> 
+               
+          <h3 class="text col1">Add Expenses</h3>
+          <form action="" class="container">
+            <div class="row">
+            <div class="col-6">
+                <label for="date">Date</label>
+                <input type="date" name="" id="date" class="form-control" required> </div>
+             <div class="col-6">
+                <label for="exp" class="">Expense Name</label>
+                <input type="text" name="" id="exp" class="form-control" required></div>
+
+
+
+                <div class="col-6 mt-2">
+                  <label for="expAmt" class="">Expense Amount</label>
+                  <input type="number" name="" id="expAmt" class="form-control" required></div>
+                  <div class="col-6">
+                  <button class="btn col2 bg1 mt-4" onclick="restiction()"  id="inner">Submit</button>
+                </div>
+
+
+              </div>
+                
+           
+          </form>
+          <hr class="col1 mt-5"> 
+
+
+          <table class="table container">
+            <thead>
+              <tr class="col1">
+                <th scope="col">#</th>
+                <th scope="col">Date</th>
+                <th scope="col">Expanse Name</th>
+                <th scope="col">Expanse Amount</th>
+                <th scope="col">Update</th>
+                <th scope="col">Delet</th>
+              </tr>
+            </thead>
+            <tbody class="col1" id="disply">
+              <!-- <tr>
+                <td>1</td>
+                 <td>Mark</td>
+                 <td>Otto</td>
+                <td>@mdo</td>
+                <td><button class="btn btn-sm col2 bg1">Update</button></td>
+                <td><button class="btn btn-sm col2 bg1">delet</button></td>  
+
+
+                
+              </tr> -->
+    
+            </tbody>
+          </table>
+
+          <hr class="col1 mt-5"> 
+          <h3 class="text col1">Overview Details Screen:</h3>
+
+
+          <table class="table container">
+            <thead>
+              <tr class="col1">
+                
+                <th scope="col">Total Budget</th>
+                <th scope="col">Total Expense</th>
+                <th scope="col">Pending Budget</th>
+                
+              </tr>
+            </thead>
+            <tbody class="col1">
+              <tr>
+              <td id="tr">0 </td>
+              <td id="tr1"> 0</td>
+              <td id="tr2"> 0</td>
+                
+                
+              </tr>
+              </tbody>
+          </table>
+
+
+    </div>
+    <script src="./app.js" defer></script>
+</body>
+</html>

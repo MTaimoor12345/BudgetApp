@@ -1,0 +1,28 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+.col1{
+    color: green;
+}
+.col2{
+    color: #fff !important;
+}
+.text2{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.ad_bd{
+    display: flex;
+    justify-content: center;
+}
+.bg1{
+      background-color: green !important;
+}
